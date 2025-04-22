@@ -16,6 +16,8 @@
     "url": "https://github.com/aoverkamp/wavecloudpine/issues"
   },
   "homepage": "https://github.com/aoverkamp/wavecloudpine#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy-navigation": "^1.0.4"
+  }
 }
-
