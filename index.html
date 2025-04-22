@@ -1,0 +1,41 @@
+---
+layout: layout.html
+---
+
+Latest Posts:
+{% for post in collections.post %}
+<article>
+    <h2><a href="{{ post.url }}" target="_blank">{{ post.data.title }}</a></h2>
+    <!-- <p>{{ post.content }}</p> -->
+</article>
+{% endfor %}
+
+<section class="featured-trips">
+    <h2>Featured Trips</h2>
+    <div style="border: 0.5rem dashed #f9f9f9; padding: 3rem; margin: 3rem;">
+        <h3>Japan</h3>
+        {% for post in collections.japan %}
+        <article>
+            <h2><a href="{{ post.url }}" target="_blank">{{ post.data.title }}</a></h2>
+        </article>
+        {% endfor %}
+    </div>
+
+    <div style="border: 0.5rem dashed #f9f9f9; padding: 3rem; margin: 3rem;">
+        <h3>Iceland</h3>
+        {% for post in collections.iceland %}
+        <article>
+            <h2><a href="{{ post.url }}" target="_blank">{{ post.data.title }}</a></h2>
+        </article>
+        {% endfor %}
+    </div>
+
+    <div style="border: 0.5rem dashed #f9f9f9; padding: 3rem; margin: 3rem;">
+        <h3>Czech Republic</h3>
+        {% for post in collections.czech %}
+        <article>
+            <h2><a href="{{ post.url }}" target="_blank">{{ post.data.title }}</a></h2>
+        </article>
+        {% endfor %}
+    </div>
+</section>

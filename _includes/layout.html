@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Photo Blog - A.Overkamp</title>    
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+
+  <body>
+    <div class="parallax-trips gradient">
+      <header class="site-header">
+        <h1>{{ title | default: "Photo Blog"}}</h1>
+        <nav>
+          {% assign navPages = collections.all | eleventyNavigation %}
+          <ul>
+          {%- for entry in navPages %}
+            <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+              <a href="{{ entry.url }}">{{ entry.title }}</a>
+            </li>
+          {%- endfor %}
+          </ul>
+        </nav>
+      </header>
+
+      <main class="site-body" role="main" style="padding: 10rem; max-width: 800px; margin: 0 auto;">
+        {{ content }}
+      </main>
+    </div>
+  </body>
+</html>
