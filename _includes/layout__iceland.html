@@ -29,7 +29,7 @@
   </head>
   <body>
     <div class="parallax-trips iceland">
-      <header class="site-header gradient-iceland">
+      <header class="site-header ">
         <h1>{{ title | default: "Photo Blog"}}</h1>
         <nav>
           {% assign navPages = collections.all | eleventyNavigation %}
@@ -46,7 +46,7 @@
       <main class="site-body" role="main">
         {{ content }}
       </main>
-      <footer class="site-footer gradient-iceland">
+      <footer class="site-footer overlay gradient-iceland">
         <h2>endalokin.</h2>
       </footer>
     </div>
