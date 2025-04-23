@@ -71,6 +71,24 @@
       hsl(0deg 100% 69%) 100%
     );
   }
+  .gradient-iceland {
+    background-image: linear-gradient(
+      45deg,
+      hsl(240deg 100% 20%) 0%,
+      hsl(232deg 82% 30%) 8%,
+      hsl(225deg 79% 39%) 17%,
+      hsl(219deg 83% 46%) 25%,
+      hsl(212deg 100% 50%) 33%,
+      hsl(201deg 100% 50%) 42%,
+      hsl(193deg 100% 50%) 50%,
+      hsl(182deg 100% 47%) 58%,
+      hsl(167deg 100% 50%) 67%,
+      hsl(170deg 100% 50%) 75%,
+      hsl(173deg 100% 50%) 83%,
+      hsl(176deg 100% 50%) 92%,
+      hsl(178deg 100% 50%) 100%
+    );
+  }
 
 .parallax-trips {
   font-family: "Source Sans Pro", sans-serif;
