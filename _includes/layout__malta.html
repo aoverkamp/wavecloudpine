@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Czech Republic 2019 - A.Overkamp</title>    
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+
+    <style>
+      .site-footer {
+        background-image: url(https://images.unsplash.com/photo-1550776714-be5f30170236); 
+      }
+     
+      /* Section - Parallax */
+      /**************************/
+      .parallax-trips .parallax-one {
+        background-image: url(https://live.staticflickr.com/65535/54457741157_a9af1d6d42_4k.jpg);
+      }
+      .parallax-trips .parallax-two {
+        background-image: url(https://live.staticflickr.com/65535/54457747592_47a3d25183_4k.jpg);
+      }
+      .parallax-trips .parallax-three {
+        background-image: url(https://live.staticflickr.com/65535/54462469280_adb465641d_4k.jpg);
+      }
+      .site-footer {
+        background-image: url(https://live.staticflickr.com/65535/54458590951_f5cecbf6c4_4k.jpg);
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="parallax-trips malta">
+      <header class="site-header">
+        <h1>{{ title | default: "Photo Blog"}}</h1>
+        <nav>
+          {% assign navPages = collections.all | eleventyNavigation %}
+          <ul>
+          {%- for entry in navPages %}
+            <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+              <a href="{{ entry.url }}">{{ entry.title }}</a>
+            </li>
+          {%- endfor %}
+          </ul>
+        </nav>
+      </header>
+
+      <main class="site-body" role="main">
+        {{ content }}
+      </main>
+      <footer class="site-footer overlay">
+        <h2>it-tmiem.</h2>
+      </footer>
+    </div>
+  </body>
+</html>
