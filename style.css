@@ -22,6 +22,15 @@
   gap: 1rem;
 }
 
+/* Site Main */
+main {
+  padding: 1rem;
+  
+  @media screen and (min-width: 1080px) {
+      padding: 10rem;
+  }
+}
+
 /* Site Footer */
 .site-footer {
     background-size: cover;
