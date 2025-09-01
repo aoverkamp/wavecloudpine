@@ -25,6 +25,7 @@
 /* Site Main */
 main {
   padding: 1rem;
+  margin: 0 auto;
   
   @media screen and (min-width: 1080px) {
       padding: 10rem;
