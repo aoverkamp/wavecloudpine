@@ -49,6 +49,25 @@
       hsl(176deg 100% 50%) 92%,
       hsl(178deg 100% 50%) 100%
     );
+  --gradient-italy: linear-gradient(
+    45deg,
+    hsl(109deg 100% 20%) 0%,
+    hsl(106deg 96% 22%) 7%,
+    hsl(104deg 93% 25%) 13%,
+    hsl(102deg 89% 27%) 20%,
+    hsl(102deg 62% 35%) 27%,
+    hsl(100deg 33% 54%) 33%,
+    hsl(98deg 34% 72%) 40%,
+    hsl(96deg 35% 91%) 47%,
+    hsl(16deg 100% 93%) 53%,
+    hsl(14deg 100% 80%) 60%,
+    hsl(12deg 100% 68%) 67%,
+    hsl(6deg 100% 55%) 73%,
+    hsl(360deg 96% 49%) 80%,
+    hsl(360deg 90% 48%) 87%,
+    hsl(360deg 86% 47%) 93%,
+    hsl(0deg 82% 45%) 100%
+  );
 }
 * {
   margin: 0;
