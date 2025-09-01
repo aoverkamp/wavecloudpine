@@ -1,6 +1,55 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
-
+:root {
+  --gradient: linear-gradient(
+      45deg,
+      hsl(274deg 100% 9%) 0%,
+      hsl(283deg 78% 13%) 8%,
+      hsl(295deg 71% 15%) 17%,
+      hsl(306deg 67% 19%) 25%,
+      hsl(314deg 66% 24%) 33%,
+      hsl(321deg 64% 29%) 42%,
+      hsl(327deg 62% 34%) 50%,
+      hsl(333deg 60% 40%) 58%,
+      hsl(338deg 57% 45%) 67%,
+      hsl(343deg 57% 51%) 75%,
+      hsl(348deg 68% 57%) 83%,
+      hsl(354deg 82% 63%) 92%,
+      hsl(0deg 100% 69%) 100%
+    );
+  --gradient-japan: linear-gradient(
+      45deg,
+      hsl(274deg 54% 95%) 0%,
+      hsl(286deg 57% 92%) 8%,
+      hsl(299deg 54% 90%) 17%,
+      hsl(311deg 65% 88%) 25%,
+      hsl(320deg 78% 86%) 33%,
+      hsl(327deg 89% 84%) 42%,
+      hsl(333deg 99% 83%) 50%,
+      hsl(338deg 100% 80%) 58%,
+      hsl(342deg 100% 78%) 67%,
+      hsl(346deg 100% 76%) 75%,
+      hsl(351deg 100% 73%) 83%,
+      hsl(355deg 100% 71%) 92%,
+      hsl(0deg 100% 69%) 100%
+    );
+  --gradient-iceland: linear-gradient(
+      45deg,
+      hsl(0deg 0% 100%) 0%,
+      hsl(214deg 100% 97%) 8%,
+      hsl(213deg 100% 93%) 17%,
+      hsl(213deg 100% 90%) 25%,
+      hsl(212deg 100% 86%) 33%,
+      hsl(194deg 100% 77%) 42%,
+      hsl(185deg 100% 62%) 50%,
+      hsl(178deg 100% 49%) 58%,
+      hsl(167deg 100% 50%) 67%,
+      hsl(170deg 100% 50%) 75%,
+      hsl(173deg 100% 50%) 83%,
+      hsl(176deg 100% 50%) 92%,
+      hsl(178deg 100% 50%) 100%
+    );
+}
 * {
   margin: 0;
   padding: 0;  
@@ -15,11 +64,33 @@
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .site-header ul {
   display: flex;
   list-style: none;
   gap: 1rem;
+
+  background-color: #111;
+  color: #f9f9f9;
+  padding: 4rem;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 108ch;
+  z-index: 9001; /* it's over 9000!!!!! */
+
+  a, a:visited {
+    color: #f9f9f9;
+    padding: 0.5rem;
+    text-decoration: none;
+
+    &:hover {
+      color: rgb(255, 97, 97);
+    }
+  }
+
 }
 
 /* Site Main */
@@ -30,6 +101,9 @@ main {
   @media screen and (min-width: 1080px) {
       padding: 10rem;
   }
+}
+.parallax-trips main {
+  padding: 0;
 }
 
 /* Site Footer */

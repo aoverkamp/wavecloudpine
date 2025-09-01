@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Yellowstone 2024 - A.Overkamp</title>    
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+
+    <style>
+      .site-footer {
+        background-image: url(https://images.unsplash.com/photo-1550776714-be5f30170236); 
+      }
+     
+      /* Section - Parallax */
+      /**************************/
+      .parallax-trips .parallax-one {
+        background-image: url(https://live.staticflickr.com/65535/54022441010_b7d288544d_3k.jpg);
+      }
+      .parallax-trips .parallax-two {
+        background-image: url(https://live.staticflickr.com/65535/54021405636_9a998276cb_4k.jpg);  
+      }
+      .parallax-trips .parallax-three {
+        background-image: url(https://live.staticflickr.com/65535/54022079311_af02a22a80_4k.jpg);
+      }
+      .site-footer {
+        background-image: url(https://live.staticflickr.com/65535/54021740953_6a72259091_4k.jpg);
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="parallax-trips malta">
+      <header class="site-header">
+        <h1>{{ title | default: "Photo Blog"}}</h1>
+        <nav>
+          {% assign navPages = collections.all | eleventyNavigation %}
+          <details>
+            <summary>Menu</summary>
+            <ul>
+                <li><a href="/">Home</a></li>
+              {%- for entry in navPages %}
+                <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+                  <a href="{{ entry.url }}">{{ entry.title }}</a>
+                </li>
+              {%- endfor %}
+            </ul>
+          </details>
+        </nav>
+      </header>
+
+      <main class="site-body" role="main">
+        {{ content }}
+      </main>
+      <footer class="site-footer overlay">
+        <h2>{{ conclusion | default: "The End"}}</h2>
+        <small style="margin: 0 auto; padding: 2rem; text-align: center; width: 100%; color: #f9f9f9; display: block; opacity: 0.25;">Copyright 2025 by A. Overkamp. All rights reserved.</small>
+      </footer>
+    </div>
+  </body>
+</html>

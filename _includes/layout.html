@@ -8,24 +8,29 @@
   </head>
 
   <body>
-    <div class="parallax-trips gradient">
+    <div class="gradient">
       <header class="site-header">
         <h1>{{ title | default: "Photo Blog"}}</h1>
         <nav>
           {% assign navPages = collections.all | eleventyNavigation %}
-          <ul>
-          {%- for entry in navPages %}
-            <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
-              <a href="{{ entry.url }}">{{ entry.title }}</a>
-            </li>
-          {%- endfor %}
-          </ul>
+          <details>
+            <summary>Menu</summary>
+            <ul>
+                <li><a href="/">Home</a></li>
+              {%- for entry in navPages %}
+                <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+                  <a href="{{ entry.url }}">{{ entry.title }}</a>
+                </li>
+              {%- endfor %}
+            </ul>
+          </details>
         </nav>
       </header>
 
       <main class="site-body" role="main" style="max-width: 800px;">
         {{ content }}
       </main>
+      <footer><small style="margin: 0 auto; padding: 2rem; text-align: center; width: 100%; color: #ff83e0; display: block;">Copyright 2025 by A. Overkamp. All rights reserved.</small></footer>
     </div>
   </body>
 </html>
