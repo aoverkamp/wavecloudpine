@@ -4,6 +4,10 @@
       {% include "basehead.html" %}
       {% block head %}{% endblock %}
     <style>
+      
+      main {
+        margin-top: 68px;
+      }
       .site-footer {
         background-image: url(https://images.unsplash.com/photo-1550776714-be5f30170236); 
       }
@@ -24,7 +28,7 @@
   </head>
   <body>
     <div class="parallax-trips">
-      <header class="site-header">
+      <header class="site-header fixed">
         <h1>{{ title | default: "Photo Blog"}}</h1>
         <nav>
           {% assign navPages = collections.all | eleventyNavigation %}

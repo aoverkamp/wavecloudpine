@@ -81,8 +81,33 @@ layout: layout.html
     .m {
         background-image: url(https://live.staticflickr.com/5609/15730830766_fb35821e93_k.jpg); 
     }
-    .latest-posts {
+    .latest {
         margin: 3rem auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @media screen and (min-width: 900px) {
+            flex-direction: row;
+            aside {
+                flex-basis: 35%;
+            }
+        }
+        aside {
+            padding: 1rem 1rem 3rem;
+            border: 0.125rem dotted #ff9090;
+            h2, p, a {
+                font-weight: 300;
+                color: #f9f9f9;
+            }
+            a {
+                display: inline-block;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+    .latest-posts {
+        flex: 1 1 auto;
         padding: 1rem 1rem 3rem;
         background-color: #ff9090;
 
@@ -109,15 +134,23 @@ layout: layout.html
     <a href="/england/England-2014/" class="box m"><span>England 2014</span></a>
 </nav>
 
-<section class="latest-posts">
-    <h2>Latest Posts:</h2>
-    {% for post in collections.post %}
-    <article>
-        <h2><a href="{{ post.url }}" target="_blank">{{ post.data.title }}</a></h2>
-        <!-- <p>{{ post.content }}</p> -->
-    </article>
-    {% endfor %}
+<section class="latest">
+   <div class="latest-posts">
+        <h2>Latest Posts:</h2>
+        {% for post in collections.post %}
+        <article>
+            <h2><a href="{{ post.url }}" target="_blank">{{ post.data.title }}</a></h2>
+            <!-- <p>{{ post.content }}</p> -->
+        </article>
+        {% endfor %}
+    </div>
+    <aside>
+        <h2>Wave Cloud Pine?</h2>
+        <p>I am compelled to give myself creative assignments while on our travel adventures. Our days are almost always filled with food, history, interesting flora and fauna, and plenty of good company. I feverishly document as much as I can while also looking to reflect what I see along the way.</p>
+        <a href="/posts/About">Read More</a>
+    </aside>
 </section>
+
 
 <!--
 <section class="featured-trips">
