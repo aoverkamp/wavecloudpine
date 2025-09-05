@@ -224,6 +224,7 @@ main {
 .parallax-trips {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
+  overflow-x:hidden;
 }
 .parallax-trips h1, 
 .parallax-trips h2, 
