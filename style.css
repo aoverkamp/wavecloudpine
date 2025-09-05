@@ -75,6 +75,16 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+/* Typography */
+h1 {
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 
 /* Site Header */
 .site-header {
@@ -85,14 +95,15 @@
   align-items: center;
   position: relative;
 }
+
 .site-header ul {
   display: flex;
   list-style: none;
   gap: 1rem;
 
-  background-color: #111;
+  background-color: rgba(17, 17, 17, 0.9);
   color: #f9f9f9;
-  padding: 4rem;
+  padding: 2rem 4rem 3rem;
   position: absolute;
   right: 0;
   width: 100%;
@@ -109,6 +120,17 @@
       color: rgb(255, 97, 97);
     }
   }
+  .home-link {
+    flex-basis: 100%;
+
+    svg {
+      fill: #f9f9f9;
+      height: 1.5rem;
+    }
+    a:hover svg {
+      fill: rgb(255, 97, 97);
+    }
+  } 
 
 }
 
@@ -207,13 +229,12 @@ main {
   
   font-size: 24px;
   
-  text-transform: uppercase;
+  
   color: black;
   padding: 0;
   margin: 0;
 }
 .parallax-trips h2 {
-  
   font-size: 70px;
   letter-spacing: 10px;
   text-align: center;
