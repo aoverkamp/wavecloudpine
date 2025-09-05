@@ -321,44 +321,30 @@ main {
 
 /* Section - Parallax */
 /**************************/
-.parallax-trips .parallax-one {
+.parallax-bg {
   padding-top: 200px;
   padding-bottom: 200px;
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866);
   background-attachment: fixed;
   background-size: cover;
- 
   background-repeat: no-repeat;
+  background-position: center center;
+}
+.parallax-zero {
+  background-image: url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866);
+  min-height: 500px;
+}
+.parallax-one {
+  background-image: url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866);
   background-position: top center;
 }
-.parallax-trips .parallax-two {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+.parallax-two {
   background-image: url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866);
-  background-attachment: fixed;
-  background-size: cover;
-  
-  background-repeat: no-repeat;
-  background-position: center center;
 }
-.parallax-trips .parallax-three {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+.parallax-three {
   background-image: url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866);
-  background-attachment: fixed;
-  background-size: cover;
-  
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 /* Extras */
