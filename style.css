@@ -335,7 +335,11 @@ main {
 }
 .parallax-zero {
   background-image: url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866);
-  min-height: 500px;
+  min-height: 350px;
+  
+  @media screen and (min-width: 1080px) {
+      min-height: 700px;
+  }
 }
 .parallax-one {
   background-image: url(https://images.unsplash.com/photo-1533134486753-c833f0ed4866);
