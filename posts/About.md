@@ -17,7 +17,7 @@ title: About Wave Cloud Pine
 
 ### Wave Cloud Pine? What is this about?
 
-I enjoy traveling with family and friends, and am compelled to give myself creative assignments while on our travel adventures. Our days are almost always filled with food, history, interesting flora and fauna, and plenty of good company. I feverishly document as much as I can while also looking to reflect what I see along the way. This site is an atempt to keep track of some of those reflections as best as I can keep up. Lotta strands in old Duder's head.
+I enjoy traveling with family and friends, and am compelled to give myself creative assignments while on our travel adventures. Our days are almost always filled with food, history, interesting flora and fauna, and plenty of good company. I feverishly document as much as I can while also looking to reflect what I see along the way. This site is an attempt to keep track of some of those reflections as best as I can keep up. Lotta strands in old Duder's head.
 
 <!--![Anthony Overkamp reclining on couch with a scarf and knit hat](https://aoverkamp.com/assets/images/ao-scarf-2019-min.png "Anthony Overkamp reclining on couch with a scarf and knit hat")-->
 
