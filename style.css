@@ -216,3 +216,42 @@ main {
   width: 150px;
   margin: 3rem auto;
 }
+
+/*--- Gallery ---*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem 0 6rem;
+
+    a { 
+        flex: 1 1 calc(20% - 4rem); /* keep in row of 5 all the time */
+        img {
+            width: 100%;
+            transition: all 0.25s ease;
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+        /* for when row five only 700 and up
+        @media screen and (min-width: 700px) {
+            flex: 1 1 calc(20% - 4rem);
+        }
+        */
+    }
+
+    &.gallery__left {
+      a { 
+        flex: 0 1 calc(20% - 4rem);
+      }
+    }
+    &.gallery__right {
+      justify-content: flex-end;
+      a { 
+        flex: 0 1 calc(20% - 4rem);
+      }
+    }
+}
