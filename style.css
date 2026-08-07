@@ -193,6 +193,9 @@ main {
 .overlay {
     border-image: linear-gradient(hsla(0, 0%, 100%, 0.6), hsla(230.8, 100%, 5.1%, 0.87)) fill 1;
 }  
+div.gradient {
+  min-height: 100vh; /* make gradient full screen on posts */
+}
 .gradient {
   background-image: var(--gradient);
 } 

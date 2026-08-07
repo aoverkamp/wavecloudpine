@@ -3,9 +3,6 @@ title: All of the Jellyfish
 ---
 
 <style>
-    .gradient {
-        height: 100vh;
-    }
     main.site-body {
         max-width: 1200px !important;
         p {
