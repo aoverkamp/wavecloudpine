@@ -3,8 +3,26 @@ title: Jellyfish Collection
 ---
 
 <style>
+    .gradient {
+        background-image: url('//live.staticflickr.com/65535/55449600035_f530078122_k.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        backdrop-filter: opacity(10%);
+        position: relative;
+
+        &::before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            border-image: linear-gradient(hsla(303, 100%, 92.2%, 0.6), hsla(263.6, 84.6%, 7.6%, 0.87)) fill 1;
+            position: absolute;
+            z-index: 3;
+        }
+    }
     main.site-body {
         max-width: 1200px !important;
+        position: relative;
+        z-index: 4;
         p {
             max-width: 79ch;
             margin-left: auto;
@@ -13,6 +31,10 @@ title: Jellyfish Collection
     }
     .gallery {
         justify-content: center;
+    }
+    .site-header, footer {
+        position: relative;
+        z-index: 4
     }
 </style>
 
