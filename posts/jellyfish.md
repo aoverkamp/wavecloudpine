@@ -1,5 +1,5 @@
 ---
-title: All of the Jellyfish
+title: Jellyfish Collection
 ---
 
 <style>
